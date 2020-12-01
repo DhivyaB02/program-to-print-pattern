@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main() {
+ 
+   int i, j, no_of_spaces = 4, spaceCount,k=1;
+  
+
+   for (i = 1; i <= 5; i++) {
+      for (spaceCount = no_of_spaces; spaceCount >= 1; spaceCount--) {
+         printf("  "); //2spaces
+      }
+
+      for(j=1;j<=spaceCount-1;j++,k++){
+           printf(" %d",k);
+      }
+
+      printf("\n");
+      no_of_spaces--;
+   }
+   return 0;
+}
